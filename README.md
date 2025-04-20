@@ -21,16 +21,21 @@ The program simulates a full PKI setup where:
 ---
 
 ## 📁 Directory Structure
+```bash
+.
 ├── main.go
 ├── root.pem
 ├── intermediate.pem
 ├── client.pem
 ├── server.pem
 └── keys/
-├── privatekey.pem            # Root CA private key
-├── interPrivateKey.pem       # Intermediate CA private key
-├── clientPrivateKey.pem      # Client private key
-└── serverPrivateKey.pem      # Server private key
+    ├── privatekey.pem           # Root CA private key
+    ├── interPrivateKey.pem      # Intermediate CA private key
+    ├── clientPrivateKey.pem     # Client private key
+    └── serverPrivateKey.pem     # Server private key
+```
+
+
 
 >  Note: This script assumes that private keys for each entity are already generated and stored in `keys/` as PEM-encoded PKCS#8 files.
 
